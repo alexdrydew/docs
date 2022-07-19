@@ -1,5 +1,5 @@
 # SetSkillFromOutputField
-`toloka.client.actions.SetSkillFromOutputField` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/actions.py#L98)
+`toloka.client.actions.SetSkillFromOutputField` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.1/src/client/actions.py#L98)
 
 ```python
 SetSkillFromOutputField(
@@ -10,21 +10,21 @@ SetSkillFromOutputField(
 )
 ```
 
-Set performer skill value from source
+Sets Toloker's skill value to the percentage of correct or incorrect answers.
 
 
-You can use this rule only with collectors.MajorityVote and collectors.GoldenSet.
+You can use this action with [MajorityVote](https://toloka.ai/en/docs/toloka-kit/reference/toloka.client.collectors.MajorityVote) and [GoldenSet](https://toloka.ai/en/docs/toloka-kit/reference/toloka.client.collectors.GoldenSet) collectors.  # noqa: E501
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`skill_id`|**Optional\[str\]**|<p>ID of the skill to update.</p>
-`from_field`|**Union\[[RuleConditionKey](toloka.client.conditions.RuleConditionKey.md), str, None\]**|<p>The value to assign to the skill:<ul><li>correct_answers_rate - Percentage of correct answers.</li><li>incorrect_answer_rate - Percentage of incorrect answers.</li></ul></p>
+`skill_id`|**Optional\[str\]**|<p>The ID of the skill to update.</p>
+`from_field`|**Union\[[RuleConditionKey](toloka.client.conditions.RuleConditionKey.md), str, None\]**|<p>The value to assign to the skill:<ul><li>`correct_answers_rate` — Percentage of correct answers.</li><li>`incorrect_answers_rate` — Percentage of incorrect answers.</li></ul></p>
 
 **Examples:**
 
-How to set the skill value to mean consistency with the majority.
+In the following example, a `MajorityVote` collector is used to update a skill value.
 
 ```python
 new_pool = toloka.pool.Pool(....)

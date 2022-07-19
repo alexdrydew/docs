@@ -1,5 +1,5 @@
 # TaskSearchRequest
-`toloka.client.search_requests.TaskSearchRequest` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/search_requests.py#L523)
+`toloka.client.search_requests.TaskSearchRequest` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.1/src/client/search_requests.py#L522)
 
 ```python
 TaskSearchRequest(

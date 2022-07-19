@@ -5,7 +5,7 @@
 UserSkillSortItems(self, items=None)
 ```
 
-Parameters for sorting user skill search results
+Parameters for sorting Toloker skill search results
 
 
 You can specify multiple parameters.

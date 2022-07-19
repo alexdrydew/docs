@@ -1,20 +1,20 @@
 # find_user_skills
 `toloka.client.TolokaClient.find_user_skills`
 
-Finds all user skills that match certain rules
+Finds all Toloker's skills that match certain rules
 
 
-UserSkill describe the skill value for a specific performer.
-As a result, it returns an object that contains the first part of the found user skills and whether there
+`UserSkill` describes the skill value for a specific Toloker.
+As a result, it returns an object that contains the first part of the found Toloker's skills and whether there
 are any more results.
-It is better to use the "get_user_skills" method, they allow to iterate trought all results
+It is better to use the [get_user_skills](toloka.client.TolokaClient.get_user_skills.md) method, it allows you to iterate through all results
 and not just the first output.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`user_id`|**Optional\[str\]**|<p>Performer ID.</p>
+`user_id`|**Optional\[str\]**|<p>Toloker&#x27;s ID.</p>
 `skill_id`|**Optional\[str\]**|<p>Skill ID.</p>
 `id_lt`|**Optional\[str\]**|<p>Skills with an ID less than the specified value.</p>
 `id_lte`|**Optional\[str\]**|<p>Skills with an ID less than or equal to the specified value.</p>
@@ -33,7 +33,7 @@ and not just the first output.
 
 * **Returns:**
 
-  The first `limit` user skills in `items`.
+  The first `limit` Toloker's skills in `items`.
 And a mark that there is more.
 
 * **Return type:**
@@ -46,4 +46,4 @@ And a mark that there is more.
 toloka_client.find_user_skills(limit=10)
 ```
 
-If method finds more objects than custom or system `limit` allows to operate, it will also show an indicator `has_more=True`.
+If the method finds more objects than custom or system `limit` allows to operate, it will also show an indicator `has_more=True`.

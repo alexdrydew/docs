@@ -1,10 +1,10 @@
 # get_user_restrictions
 `toloka.client.TolokaClient.get_user_restrictions`
 
-Finds all user restrictions that match certain rules and returns them in an iterable object
+Finds all Toloker restrictions that match certain rules and returns them in an iterable object
 
 
-Unlike find_user_restrictions, returns generator. Does not sort user restrictions.
+Unlike find_user_restrictions, returns generator. Does not sort Toloker restrictions.
 While iterating over the result, several requests to the Toloka server is possible.
 
 ## Parameters Description
@@ -12,7 +12,7 @@ While iterating over the result, several requests to the Toloka server is possib
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
 `scope`|**Optional\[[UserRestriction.Scope](toloka.client.user_restriction.UserRestriction.Scope.md)\]**|<p>The scope of the ban<ul><li>ALL_PROJECTS</li><li>PROJECT</li><li>POOL</li></ul></p>
-`user_id`|**Optional\[str\]**|<p>Performer ID.</p>
+`user_id`|**Optional\[str\]**|<p>Toloker&#x27;s ID.</p>
 `project_id`|**Optional\[str\]**|<p>The ID of the project that is blocked.</p>
 `pool_id`|**Optional\[str\]**|<p>The ID of the pool that is blocked.</p>
 `id_lt`|**Optional\[str\]**|<p>Bans with an ID less than the specified value.</p>

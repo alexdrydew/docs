@@ -1,5 +1,5 @@
 # UserBonusCreateRequestParameters
-`toloka.client.user_bonus.UserBonusCreateRequestParameters` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/user_bonus.py#L85)
+`toloka.client.user_bonus.UserBonusCreateRequestParameters` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.1/src/client/user_bonus.py#L85)
 
 ```python
 UserBonusCreateRequestParameters(
@@ -10,7 +10,7 @@ UserBonusCreateRequestParameters(
 )
 ```
 
-Parameters for creating performer bonuses
+Parameters for creating bonuses for Tolokers.
 
 
 Used in methods 'create_user_bonus', 'create_user_bonuses' и 'create_user_bonuses_async' of the class TolokaClient,

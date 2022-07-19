@@ -7,7 +7,13 @@ To start with Toloka-Kit:
 2. Install the Toloka-Kit package:
 
     ```shell
-    $ pip install toloka-kit
+   $ pip install toloka-kit[all]
+   ```
+   or install only required dependencies:
+   ```shell
+   $ pip install toloka-kit[pandas,autoquality,s3,zookeeper,jupyter-metrics]
+   # or just the core version
+   $ pip install toloka-kit
     ```
 
 3. Check access to the API with the following Python script. The script:
@@ -29,7 +35,7 @@ To start with Toloka-Kit:
 
 * Complete one of the [tutorials](https://toloka.ai/docs/guide/concepts/usecases.html) to get acquainted with Toloka web interface.
 * Try [Toloka-Kit usage examples](https://github.com/Toloka/toloka-kit/tree/main/examples#toloka-kit-usage-examples).
-* Read the package reference starting with [TolokaClient](reference/toloka.client.TolokaClient.md).
+* Read the package reference starting with [TolokaClient](https://toloka.ai/docs/toloka-kit/reference/toloka.client.TolokaClient.html).
 * Study [Toloka API documentation](https://toloka.ai/docs/api/concepts/about.html/).
 * See other features in [Toloka requester's guide](https://toloka.ai/docs/guide/index.html).
 * Contribute to [Toloka-Kit on GitHub](https://github.com/Toloka/toloka-kit): open pull requests, report bugs or share your [usage examples](https://github.com/Toloka/toloka-kit/tree/main/examples#need-more-examples).

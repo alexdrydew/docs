@@ -12,7 +12,7 @@ To create several tasks at once use [create_tasks](./toloka.client.TolokaClient.
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
 `task`|**[Task](toloka.client.task.Task.md)**|<p>Task to be created.</p>
-`allow_defaults`|**Optional\[bool\]**|<p>Overlap setting:<ul><li>True — Use the overlap value that is set in the `defaults.default_overlap_for_new_task_suites` pool parameter.</li><li>False — Use the overlap value that is set in the `overlap` task suite parameter.</li></ul></p>
+`allow_defaults`|**Optional\[bool\]**|<p>Active overlap setting:<ul><li>True — Use the overlap value that is set in the `defaults.default_overlap_for_new_task_suites` pool parameter.</li><li>False — Use the overlap value that is set in the `overlap` task suite parameter.</li></ul></p>
 `open_pool`|**Optional\[bool\]**|<p>Open the pool immediately after creating a task suite, if the pool is closed.</p>
 
 * **Returns:**

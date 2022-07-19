@@ -1,5 +1,5 @@
 # AssignmentSearchRequest
-`toloka.client.search_requests.AssignmentSearchRequest` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/search_requests.py#L384)
+`toloka.client.search_requests.AssignmentSearchRequest` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.1/src/client/search_requests.py#L384)
 
 ```python
 AssignmentSearchRequest(
@@ -46,15 +46,15 @@ Parameters for searching assignment
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`status`|**Optional\[List\[[Assignment.Status](toloka.client.assignment.Assignment.Status.md)\]\]**|<p>Status of an assigned task suite (Detailed status description in Assignment.Status):<ul><li>ACTIVE</li><li>SUBMITTED</li><li>ACCEPTED</li><li>REJECTED</li><li>SKIPPED</li><li>EXPIRED</li></ul></p>
-`task_id`|**Optional\[str\]**|<p>The task ID in suites generated automatically using &quot;smart mixing&quot;. You will get responses for task suites that contain the specified task.</p>
-`task_suite_id`|**Optional\[str\]**|<p>ID of a task suite.</p>
-`pool_id`|**Optional\[str\]**|<p>Pool ID.</p>
-`user_id`|**Optional\[str\]**|<p>Performer ID.</p>
-`id_lt`|**Optional\[str\]**|<p>Task suites with an assignment ID less than the specified value.</p>
-`id_lte`|**Optional\[str\]**|<p>Task suites with an assignment ID less than or equal to the specified value.</p>
-`id_gt`|**Optional\[str\]**|<p>Task suites with an assignment ID greater than the specified value.</p>
-`id_gte`|**Optional\[str\]**|<p>Task suites with an assignment ID greater than or equal to the specified value.</p>
+`status`|**Optional\[List\[[Assignment.Status](toloka.client.assignment.Assignment.Status.md)\]\]**|<p>The status of an assigned task suite:<ul><li>`ACTIVE` — Assigned but not completed.</li><li>`SUBMITTED` — Completed but not checked.</li><li>`ACCEPTED` — Accepted by the requester.</li><li>`REJECTED` — Rejected by the requester.</li><li>`SKIPPED` — Skipped by the Toloker.</li><li>`EXPIRED` — Time for completing tasks has expired.</li></ul></p>
+`task_id`|**Optional\[str\]**|<p>The ID of a task. The task suite containing that task, matches this search criteria.</p>
+`task_suite_id`|**Optional\[str\]**|<p>The ID of a task suite.</p>
+`pool_id`|**Optional\[str\]**|<p>Task suites in the pool with the specified ID.</p>
+`user_id`|**Optional\[str\]**|<p>Task suites assigned to the Toloker with the specified ID.</p>
+`id_lt`|**Optional\[str\]**|<p>Task suites with assignment IDs less than the specified value.</p>
+`id_lte`|**Optional\[str\]**|<p>Task suites with assignment IDs less than or equal to the specified value.</p>
+`id_gt`|**Optional\[str\]**|<p>Task suites with assignment IDs greater than the specified value.</p>
+`id_gte`|**Optional\[str\]**|<p>Task suites with assignment IDs greater than or equal to the specified value.</p>
 `created_lt`|**Optional\[datetime\]**|<p>Task suites assigned before the specified date.</p>
 `created_lte`|**Optional\[datetime\]**|<p>Task suites assigned before or on the specified date.</p>
 `created_gt`|**Optional\[datetime\]**|<p>Task suites assigned after the specified date.</p>

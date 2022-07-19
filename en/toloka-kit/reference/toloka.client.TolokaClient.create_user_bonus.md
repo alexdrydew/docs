@@ -1,7 +1,7 @@
 # create_user_bonus
 `toloka.client.TolokaClient.create_user_bonus`
 
-Issues payments directly to the performer
+Issues payments directly to a Toloker.
 
 
 You can send a maximum of 10,000 requests of this kind per day.
@@ -37,7 +37,7 @@ new_bonus = toloka_client.create_user_bonus(
             'RU': 'Прекрасная работа!',
         },
         public_message={
-            'EN': 'You are the best performer!',
+            'EN': 'You are the best!',
             'RU': 'Молодец!',
         },
         assignment_id='012345'

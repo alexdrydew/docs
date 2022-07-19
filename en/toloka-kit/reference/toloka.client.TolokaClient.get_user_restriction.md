@@ -1,21 +1,21 @@
 # get_user_restriction
-`toloka.client.TolokaClient.get_user_restriction` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/__init__.py#L40)
+`toloka.client.TolokaClient.get_user_restriction` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.1/src/client/__init__.py#L40)
 
 ```python
 get_user_restriction(self, user_restriction_id: str)
 ```
 
-Reads one specific user restriction
+Gets information about a Toloker restriction.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`user_restriction_id`|**str**|<p>ID of the user restriction.</p>
+`user_restriction_id`|**str**|<p>ID of the Toloker restriction.</p>
 
 * **Returns:**
 
-  The user restriction.
+  The Toloker restriction.
 
 * **Return type:**
 

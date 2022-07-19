@@ -1,5 +1,5 @@
 # GoldenSet
-`toloka.client.collectors.GoldenSet` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/collectors.py#L286)
+`toloka.client.collectors.GoldenSet` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.1/src/client/collectors.py#L286)
 
 ```python
 GoldenSet(
@@ -10,16 +10,16 @@ GoldenSet(
 )
 ```
 
-How performer answers on control tasks
+How Toloker answers on control tasks
 
 
-Use control tasks to assign a skill to performers based on their responses and ban performers who submit incorrect responses.
+Use control tasks to assign a skill to Tolokers based on their responses and ban Tolokers who submit incorrect responses.
 
 Don't use it if:
 - You have a lot of response options.
-- Users need to attach a file to their assignment.
-- Users need to transcribe text.
-- Users need to select objects in a photo.
+- Tolokers need to attach a file to their assignment.
+- Tolokers need to transcribe text.
+- Tolokers need to select objects in a photo.
 - Tasks don't have a correct or incorrect response. For example: "Which image do you like best?" or
 "Choose the page design option that you like best".
 
@@ -33,20 +33,20 @@ Used with conditions:
 
 Used with actions:
 * RestrictionV2 - Block access to projects or pools.
-* ApproveAllAssignments - Approve all replies from the performer.
-* RejectAllAssignments - Reject all replies from the performer.
-* SetSkill - Set perfmer skill value.
-* SetSkillFromOutputField - Set performer skill value from source.
+* ApproveAllAssignments - Approve all replies from the Toloker.
+* RejectAllAssignments - Reject all replies from the Toloker.
+* SetSkill - Set Toloker's skill value.
+* SetSkillFromOutputField - Set Toloker's skill value from source.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`history_size`|**Optional\[int\]**|<p>The number of the performer&#x27;s last responses to control tasks.</p>
+`history_size`|**Optional\[int\]**|<p>The number of the Toloker&#x27;s last responses to control tasks.</p>
 
 **Examples:**
 
-How to approve all assignments if performer doing well with golden tasks.
+How to approve all assignments if the Toloker gives correct answers in control tasks.
 
 ```python
 new_pool = toloka.pool.Pool(....)

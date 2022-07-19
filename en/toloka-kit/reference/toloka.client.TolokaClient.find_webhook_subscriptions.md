@@ -6,7 +6,7 @@ Finds all webhook-subscriptions that match certain rules
 
 As a result, it returns an object that contains the first part of the found webhook-subscriptions
 and whether there are any more results.
-It is better to use the "get_webhook_subscriptions" method, they allow to iterate through all results
+It is better to use the [get_webhook_subscriptions](toloka.client.TolokaClient.get_webhook_subscriptions.md) method, it allows you to iterate through all results
 and not just the first output.
 
 ## Parameters Description

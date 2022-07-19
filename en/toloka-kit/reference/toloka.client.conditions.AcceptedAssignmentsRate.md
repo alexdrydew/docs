@@ -1,5 +1,5 @@
 # AcceptedAssignmentsRate
-`toloka.client.conditions.AcceptedAssignmentsRate` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/conditions.py#L94)
+`toloka.client.conditions.AcceptedAssignmentsRate` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.1/src/client/conditions.py#L94)
 
 ```python
 AcceptedAssignmentsRate(
@@ -9,5 +9,5 @@ AcceptedAssignmentsRate(
 )
 ```
 
-Percentage of how many assignments were accepted from this performer out of all checked assignment
+Percentage of how many assignments were accepted from this Toloker out of all checked assignment
 

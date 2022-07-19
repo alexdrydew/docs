@@ -1,12 +1,12 @@
 # find_user_restrictions
 `toloka.client.TolokaClient.find_user_restrictions`
 
-Finds all user restrictions that match certain rules
+Finds all Toloker restrictions that match certain rules
 
 
-As a result, it returns an object that contains the first part of the found user restrictions and whether there
+As a result, it returns an object that contains the first part of the found Toloker restrictions and whether there
 are any more results.
-It is better to use the "get_user_restriction" method, they allow to iterate trought all results
+It is better to use the [get_user_restriction](toloka.client.TolokaClient.get_user_restriction.md) method, it allows you to iterate through all results
 and not just the first output.
 
 ## Parameters Description
@@ -14,7 +14,7 @@ and not just the first output.
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
 `scope`|**Optional\[[UserRestriction.Scope](toloka.client.user_restriction.UserRestriction.Scope.md)\]**|<p>The scope of the ban<ul><li>ALL_PROJECTS</li><li>PROJECT</li><li>POOL</li></ul></p>
-`user_id`|**Optional\[str\]**|<p>Performer ID.</p>
+`user_id`|**Optional\[str\]**|<p>Toloker&#x27;s ID.</p>
 `project_id`|**Optional\[str\]**|<p>The ID of the project that is blocked.</p>
 `pool_id`|**Optional\[str\]**|<p>The ID of the pool that is blocked.</p>
 `id_lt`|**Optional\[str\]**|<p>Bans with an ID less than the specified value.</p>
@@ -30,7 +30,7 @@ and not just the first output.
 
 * **Returns:**
 
-  The first `limit` user restrictions in `items`.
+  The first `limit` Toloker restrictions in `items`.
 And a mark that there is more.
 
 * **Return type:**
@@ -43,4 +43,4 @@ And a mark that there is more.
 toloka_client.find_user_restrictions(sort=['-created', '-id'], limit=10)
 ```
 
-If method finds more objects than custom or system `limit` allows to operate, it will also show an indicator `has_more=True`.
+If the method finds more objects than custom or system `limit` allows to operate, it will also show an indicator `has_more=True`.

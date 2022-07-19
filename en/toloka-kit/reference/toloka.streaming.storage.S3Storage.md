@@ -1,10 +1,10 @@
 # S3Storage
-`toloka.streaming.storage.S3Storage` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/streaming/storage.py#L141)
+`toloka.streaming.storage.S3Storage` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.1/src/streaming/storage.py#L158)
 
 ```python
 S3Storage(
     self,
-    bucket: Type,
+    bucket: BucketType,
     *,
     locker: Optional[BaseLocker] = None
 )
@@ -12,11 +12,22 @@ S3Storage(
 
 Storage that save to AWS S3 using given boto3 client.
 
+
+{% note warning %}
+
+Requires toloka-kit[s3] extras. Install it with the following command:
+
+```shell
+pip install toloka-kit[s3]
+```
+
+{% endnote %}
+
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`bucket`|**Type**|<p>Boto3 bucket object.</p>
+`bucket`|**[BucketType](toloka.streaming.storage.BucketType.md)**|<p>Boto3 bucket object.</p>
 `locker`|**Optional\[[BaseLocker](toloka.streaming.locker.BaseLocker.md)\]**|<p>Optional locker object. By default, no locker is used.</p>
 
 **Examples:**
@@ -24,7 +35,7 @@ Storage that save to AWS S3 using given boto3 client.
 Create new instance.
 
 ```python
-!pip install boto3
+!pip install toloka-kit[s3]
 import boto3
 import os
 session = boto3.Session(

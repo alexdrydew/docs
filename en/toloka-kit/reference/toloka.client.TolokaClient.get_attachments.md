@@ -13,7 +13,7 @@ While iterating over the result, several requests to the Toloka server is possib
 | :----------| :----| :-----------|
 `name`|**Optional\[str\]**|<p>File name.</p>
 `type`|**Optional\[[Attachment.Type](toloka.client.attachment.Attachment.Type.md)\]**|<p>Attachment type. Currently the key can have only one value - ASSIGNMENT_ATTACHMENT.</p>
-`user_id`|**Optional\[str\]**|<p>ID of the user who uploaded the file(s).</p>
+`user_id`|**Optional\[str\]**|<p>ID of the Toloker who uploaded the file(s).</p>
 `assignment_id`|**Optional\[str\]**|<p>Assignment ID.</p>
 `pool_id`|**Optional\[str\]**|<p>Pool ID.</p>
 `owner_id`|**Optional\[str\]**|<p>Optional[str]</p>
@@ -22,10 +22,10 @@ While iterating over the result, several requests to the Toloka server is possib
 `id_lte`|**Optional\[str\]**|<p>Files with an ID less than or equal to the specified value.</p>
 `id_gt`|**Optional\[str\]**|<p>Files with an ID greater than the specified value.</p>
 `id_gte`|**Optional\[str\]**|<p>Files with an ID greater than or equal to the specified value.</p>
-`created_lt`|**Optional\[datetime\]**|<p>Files uploaded by users before the specified date.</p>
-`created_lte`|**Optional\[datetime\]**|<p>Files uploaded by users before or on the specified date.</p>
-`created_gt`|**Optional\[datetime\]**|<p>Files uploaded by users after the specified date.</p>
-`created_gte`|**Optional\[datetime\]**|<p>Files uploaded by users after or on the specified date.</p>
+`created_lt`|**Optional\[datetime\]**|<p>Files uploaded by Tolokers before the specified date.</p>
+`created_lte`|**Optional\[datetime\]**|<p>Files uploaded by Tolokers before or on the specified date.</p>
+`created_gt`|**Optional\[datetime\]**|<p>Files uploaded by Tolokers after the specified date.</p>
+`created_gte`|**Optional\[datetime\]**|<p>Files uploaded by Tolokers after or on the specified date.</p>
 
 * **Yields:**
 

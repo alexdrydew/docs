@@ -6,7 +6,7 @@ Finds all pools that match certain rules
 
 As a result, it returns an object that contains the first part of the found pools and whether there
 are any more results.
-It is better to use the "get_pools" method, they allow to iterate trought all results
+It is better to use the [get_pools](toloka.client.TolokaClient.get_pools.md) method, it allows you to iterate through all results
 and not just the first output.
 
 ## Parameters Description
@@ -59,4 +59,4 @@ Find open pools in a specific project.
 toloka_client.find_pools(status='OPEN', project_id='1')
 ```
 
-If method finds more objects than custom or system `limit` allows to operate, it will also show an indicator `has_more=True`.
+If the method finds more objects than custom or system `limit` allows to operate, it will also show an indicator `has_more=True`.

@@ -1,5 +1,5 @@
 # MessageThread
-`toloka.client.message_thread.MessageThread` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/message_thread.py#L77)
+`toloka.client.message_thread.MessageThread` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.1/src/client/message_thread.py#L77)
 
 ```python
 MessageThread(
@@ -37,7 +37,7 @@ will be created
 `messages_inlined`|**Optional\[bool\]**|<p>Access to message threads:<ul><li>True — The message is available in the messages field.</li><li>False — The message is available in a separate request.</li></ul></p>
 `messages`|**Optional\[List\[[Message](toloka.client.message_thread.MessageThread.Message.md)\]\]**|<p>Messages in the thread. Sorted by creation date (new first).</p>
 `meta`|**Optional\[[Meta](toloka.client.message_thread.MessageThread.Meta.md)\]**|<p>Meta</p>
-`answerable`|**Optional\[bool\]**|<p>Ability to reply to a message:<ul><li>True — The performer can respond to the message.</li><li>False — The performer cannot respond to the message.</li></ul></p>
+`answerable`|**Optional\[bool\]**|<p>Ability to reply to a message:<ul><li>True — The Toloker can respond to the message.</li><li>False — The Toloker cannot respond to the message.</li></ul></p>
 `folders`|**Optional\[List\[[Folder](toloka.client.message_thread.Folder.md)\]\]**|<p>Folders where the thread is located.</p>
 `compose_details`|**Optional\[[ComposeDetails](toloka.client.message_thread.MessageThread.ComposeDetails.md)\]**|<p>For messages that you sent: details of the POST request for creating the message.</p>
 `created`|**Optional\[datetime\]**|<p>The date the first message in the chain was created.</p>

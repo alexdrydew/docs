@@ -1,7 +1,7 @@
 # create_user_bonuses_async
 `toloka.client.TolokaClient.create_user_bonuses_async`
 
-Issues payments directly to the performers, asynchronously creates many user bonuses
+Issues payments directly to Tolokers, asynchronously creates many `UserBonus` instances.
 
 
 You can send a maximum of 10,000 requests of this kind per day.
@@ -35,7 +35,7 @@ new_bonuses=[
             'RU': 'Прекрасная работа!',
         },
         public_message={
-            'EN': 'You are the best performer!',
+            'EN': 'You are the best!',
             'RU': 'Молодец!',
         },
         assignment_id='1'),

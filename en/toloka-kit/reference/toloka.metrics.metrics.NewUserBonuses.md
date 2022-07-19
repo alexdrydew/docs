@@ -1,5 +1,5 @@
 # NewUserBonuses
-`toloka.metrics.metrics.NewUserBonuses` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/metrics/metrics.py#L185)
+`toloka.metrics.metrics.NewUserBonuses` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.1/src/metrics/metrics.py#L185)
 
 ```python
 NewUserBonuses(
@@ -14,7 +14,7 @@ NewUserBonuses(
 )
 ```
 
-Tracking the new user bonuses - count or money amount.
+Tracking rewards for Tolokers: reward count or money amount.
 
 ## Parameters Description
 

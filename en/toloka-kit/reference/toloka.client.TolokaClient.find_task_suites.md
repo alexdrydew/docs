@@ -6,7 +6,7 @@ Finds all task suites that match certain rules
 
 As a result, it returns an object that contains the first part of the found task suites and whether there
 are any more results.
-It is better to use the "get_task_suites" method, they allow to iterate trought all results
+It is better to use the [get_task_suites](toloka.client.TolokaClient.get_task_suites.md) method, it allows you to iterate through all results
 and not just the first output.
 
 ## Parameters Description
@@ -47,4 +47,4 @@ Find three most recently created task suites in a specified pool.
 toloka_client.find_task_suites(pool_id='1', sort=['-created', '-id'], limit=3)
 ```
 
-If method finds more objects than custom or system `limit` allows to operate, it will also show an indicator `has_more=True`.
+If the method finds more objects than custom or system `limit` allows to operate, it will also show an indicator `has_more=True`.

@@ -1,18 +1,18 @@
 # get_user_bonuses
 `toloka.client.TolokaClient.get_user_bonuses`
 
-Finds all user bonuses that match certain rules and returns them in an iterable object
+Finds all Tolokers' rewards that match certain rules and returns them in an iterable object
 
 
-Unlike find_user_bonuses, returns generator. Does not sort user bonuses.
+Unlike find_user_bonuses, returns generator. Does not sort `UserBonus` instances.
 While iterating over the result, several requests to the Toloka server is possible.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`user_id`|**Optional\[str\]**|<p>Performer ID.</p>
-`assignment_id`|**Optional\[str\]**|<p>ID of the performer&#x27;s response to the task a reward is issued for.</p>
+`user_id`|**Optional\[str\]**|<p>The ID of the Toloker.</p>
+`assignment_id`|**Optional\[str\]**|<p>The ID of the Toloker&#x27;s response to the task a reward is issued for.</p>
 `private_comment`|**Optional\[str\]**|<p>Comments for the requester.</p>
 `id_lt`|**Optional\[str\]**|<p>Bonuses with an ID less than the specified value.</p>
 `id_lte`|**Optional\[str\]**|<p>Bonuses with an ID less than or equal to the specified value.</p>

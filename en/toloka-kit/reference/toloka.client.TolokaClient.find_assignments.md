@@ -1,27 +1,26 @@
 # find_assignments
 `toloka.client.TolokaClient.find_assignments`
 
-Finds all assignments that match certain rules
+Finds all assignments that match certain criteria.
 
 
-As a result, it returns an object that contains the first part of the found assignments and whether there
-are any more results.
-It is better to use the "get_assignments" method, they allow to iterate trought all results
-and not just the first output.
+The number of returned assignments is limited. Find remaining matching assignments with subsequent `find_assignments` calls.
+
+To iterate over all matching assignments in one call use [get_assignments](toloka.client.TolokaClient.get_assignments.md). Note that `get_assignments` can't sort results.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`status`|**Union\[str, [Assignment.Status](toloka.client.assignment.Assignment.Status.md), List\[Union\[str, [Assignment.Status](toloka.client.assignment.Assignment.Status.md)\]\], None\]**|<p>Status of an assigned task suite (Detailed status description in Assignment.Status):<ul><li>ACTIVE</li><li>SUBMITTED</li><li>ACCEPTED</li><li>REJECTED</li><li>SKIPPED</li><li>EXPIRED</li></ul></p>
-`task_id`|**Optional\[str\]**|<p>The task ID in suites generated automatically using &quot;smart mixing&quot;. You will get responses for task suites that contain the specified task.</p>
-`task_suite_id`|**Optional\[str\]**|<p>ID of a task suite.</p>
-`pool_id`|**Optional\[str\]**|<p>Pool ID.</p>
-`user_id`|**Optional\[str\]**|<p>Performer ID.</p>
-`id_lt`|**Optional\[str\]**|<p>Task suites with an assignment ID less than the specified value.</p>
-`id_lte`|**Optional\[str\]**|<p>Task suites with an assignment ID less than or equal to the specified value.</p>
-`id_gt`|**Optional\[str\]**|<p>Task suites with an assignment ID greater than the specified value.</p>
-`id_gte`|**Optional\[str\]**|<p>Task suites with an assignment ID greater than or equal to the specified value.</p>
+`status`|**Union\[str, [Assignment.Status](toloka.client.assignment.Assignment.Status.md), List\[Union\[str, [Assignment.Status](toloka.client.assignment.Assignment.Status.md)\]\], None\]**|<p>The status of an assigned task suite:<ul><li>`ACTIVE` — Assigned but not completed.</li><li>`SUBMITTED` — Completed but not checked.</li><li>`ACCEPTED` — Accepted by the requester.</li><li>`REJECTED` — Rejected by the requester.</li><li>`SKIPPED` — Skipped by the Toloker.</li><li>`EXPIRED` — Time for completing tasks has expired.</li></ul></p>
+`task_id`|**Optional\[str\]**|<p>The ID of a task. The task suite containing that task, matches this search criteria.</p>
+`task_suite_id`|**Optional\[str\]**|<p>The ID of a task suite.</p>
+`pool_id`|**Optional\[str\]**|<p>Task suites in the pool with the specified ID.</p>
+`user_id`|**Optional\[str\]**|<p>Task suites assigned to the Toloker with the specified ID.</p>
+`id_lt`|**Optional\[str\]**|<p>Task suites with assignment IDs less than the specified value.</p>
+`id_lte`|**Optional\[str\]**|<p>Task suites with assignment IDs less than or equal to the specified value.</p>
+`id_gt`|**Optional\[str\]**|<p>Task suites with assignment IDs greater than the specified value.</p>
+`id_gte`|**Optional\[str\]**|<p>Task suites with assignment IDs greater than or equal to the specified value.</p>
 `created_lt`|**Optional\[datetime\]**|<p>Task suites assigned before the specified date.</p>
 `created_lte`|**Optional\[datetime\]**|<p>Task suites assigned before or on the specified date.</p>
 `created_gt`|**Optional\[datetime\]**|<p>Task suites assigned after the specified date.</p>
@@ -46,12 +45,12 @@ and not just the first output.
 `expired_lte`|**Optional\[datetime\]**|<p>Task suites expired before or on the specified date.</p>
 `expired_gt`|**Optional\[datetime\]**|<p>Task suites expired after the specified date.</p>
 `expired_gte`|**Optional\[datetime\]**|<p>Task suites expired after or on the specified date.</p>
-`sort`|**Union\[List\[str\], [AssignmentSortItems](toloka.client.search_requests.AssignmentSortItems.md), None\]**|<p>How to sort result. Defaults to None.</p>
-`limit`|**Optional\[int\]**|<p>Limit on the number of assignments returned. The maximum is 100,000. Defaults to None, in which case it returns first 50 results.</p>
+`sort`|**Union\[List\[str\], [AssignmentSortItems](toloka.client.search_requests.AssignmentSortItems.md), None\]**|<p>Sorting options. </p><p>Default value: `None`.</p>
+`limit`|**Optional\[int\]**|<p>Returned assignments limit. The maximum value is 100,000. </p><p>Default value: 50.</p>
 
 * **Returns:**
 
-  The first `limit` assignments in `items`. And a mark that there is more.
+  Found assignments and a flag showing whether there are more matching assignments.
 
 * **Return type:**
 
@@ -64,5 +63,3 @@ Search for `SKIPPED` or `EXPIRED` assignments in the specified pool.
 ```python
 toloka_client.find_assignments(pool_id='1', status = ['SKIPPED', 'EXPIRED'])
 ```
-
-If method finds more objects than custom or system `limit` allows to operate, it will also show an indicator `has_more=True`.

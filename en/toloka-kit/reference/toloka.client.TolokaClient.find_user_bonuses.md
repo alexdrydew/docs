@@ -1,20 +1,20 @@
 # find_user_bonuses
 `toloka.client.TolokaClient.find_user_bonuses`
 
-Finds all user bonuses that match certain rules
+Finds all Tolokers' rewards that match certain rules.
 
 
-As a result, it returns an object that contains the first part of the found user bonuses and whether there
+As a result, it returns an object that contains the first part of the found `UserBonus` instances and whether there
 are any more results.
-It is better to use the "get_user_bonuses" method, they allow to iterate trought all results
+It is better to use the [get_user_bonuses](toloka.client.TolokaClient.get_user_bonuses.md) method, it allows you to iterate through all results
 and not just the first output.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`user_id`|**Optional\[str\]**|<p>Performer ID.</p>
-`assignment_id`|**Optional\[str\]**|<p>ID of the performer&#x27;s response to the task a reward is issued for.</p>
+`user_id`|**Optional\[str\]**|<p>The ID of the Toloker.</p>
+`assignment_id`|**Optional\[str\]**|<p>The ID of the Toloker&#x27;s response to the task a reward is issued for.</p>
 `private_comment`|**Optional\[str\]**|<p>Comments for the requester.</p>
 `id_lt`|**Optional\[str\]**|<p>Bonuses with an ID less than the specified value.</p>
 `id_lte`|**Optional\[str\]**|<p>Bonuses with an ID less than or equal to the specified value.</p>
@@ -29,7 +29,7 @@ and not just the first output.
 
 * **Returns:**
 
-  The first `limit` user bonuses in `items`.
+  The first `limit` `UserBonus` instances in `items`.
 And a mark that there is more.
 
 * **Return type:**
@@ -42,4 +42,4 @@ And a mark that there is more.
 toloka_client.find_user_bonuses(user_id='1', sort=['-created', '-id'], limit=3)
 ```
 
-If method finds more objects than custom or system `limit` allows to operate, it will also show an indicator `has_more=True`.
+If the method finds more objects than custom or system `limit` allows to operate, it will also show an indicator `has_more=True`.

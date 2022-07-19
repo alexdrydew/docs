@@ -1,5 +1,5 @@
 # AggregatedSolutionSearchRequest
-`toloka.client.search_requests.AggregatedSolutionSearchRequest` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/search_requests.py#L495)
+`toloka.client.search_requests.AggregatedSolutionSearchRequest` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.1/src/client/search_requests.py#L494)
 
 ```python
 AggregatedSolutionSearchRequest(
@@ -11,13 +11,13 @@ AggregatedSolutionSearchRequest(
 )
 ```
 
-Parameters for searching aggregated solution
+Parameters for filtering aggregated responses.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`task_id_lt`|**Optional\[str\]**|<p>Jobs with an ID greater than the specified value.</p>
-`task_id_lte`|**Optional\[str\]**|<p>Jobs with an ID greater than or equal to the specified value.</p>
-`task_id_gt`|**Optional\[str\]**|<p>Jobs with an ID less than the specified value.</p>
-`task_id_gte`|**Optional\[str\]**|<p>Jobs with an ID less than or equal to the specified value.</p>
+`task_id_lt`|**Optional\[str\]**|<p>Tasks with an ID less than the specified value.</p>
+`task_id_lte`|**Optional\[str\]**|<p>Tasks with an ID less than or equal to the specified value.</p>
+`task_id_gt`|**Optional\[str\]**|<p>Tasks with an ID greater than the specified value.</p>
+`task_id_gte`|**Optional\[str\]**|<p>Tasks with an ID greater than or equal to the specified value.</p>

@@ -1,7 +1,7 @@
 # create_user_bonuses
 `toloka.client.TolokaClient.create_user_bonuses`
 
-Creates many user bonuses
+Creates rewards for Tolokers.
 
 
 Right now it's safer to use asynchronous version: "create_user_bonuses_async"
@@ -17,8 +17,8 @@ You can send a maximum of 10,000 requests of this kind per day.
 
 * **Returns:**
 
-  Result of user bonuses creating. Contains created user bonuses in `items` and
-problems in "validation_errors".
+  Result of creating rewards. Contains `UserBonus` instances in `items` and
+problems in `validation_errors`.
 
 * **Return type:**
 
@@ -37,7 +37,7 @@ new_bonuses=[
             'RU': 'Прекрасная работа!',
         },
         public_message={
-            'EN': 'You are the best performer!',
+            'EN': 'You are the best!',
             'RU': 'Молодец!',
         },
         assignment_id='1'),

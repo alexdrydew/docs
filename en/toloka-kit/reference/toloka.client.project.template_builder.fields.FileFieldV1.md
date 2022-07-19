@@ -1,5 +1,5 @@
 # FileFieldV1
-`toloka.client.project.template_builder.fields.FileFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/project/template_builder/fields.py#L226)
+`toloka.client.project.template_builder.fields.FileFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.1/src/client/project/template_builder/fields.py#L226)
 
 ```python
 FileFieldV1(
@@ -21,7 +21,7 @@ This component can be used for uploading files. It's displayed in the interface 
 You can restrict the file types to upload in the "accept" property. By default, only one file can be uploaded,
 but you can allow multiple files in the "multiple" property.
 
-If a user logs in from a mobile device, it's more convenient to use field.media-file — it's adapted for mobile
+If a Toloker logs in from a mobile device, it's more convenient to use field.media-file — it's adapted for mobile
 devices and makes it easier to upload photos and videos.
 
 ## Parameters Description
