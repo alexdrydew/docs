@@ -6,7 +6,7 @@ Finds all projects that match certain rules
 
 As a result, it returns an object that contains the first part of the found projects and whether there
 are any more results.
-It is better to use the "get_projects" method, they allow to iterate trought all results
+It is better to use the [get_projects](toloka.client.TolokaClient.get_projects.md) method, it allows you to iterate through all results
 and not just the first output.
 
 ## Parameters Description
@@ -42,4 +42,4 @@ Find projects that were created before a specific date.
 toloka_client.find_projects(created_lt='2021-06-01T00:00:00')
 ```
 
-If method finds more objects than custom or system `limit` allows to operate, it will also show an indicator `has_more=True`.
+If the method finds more objects than custom or system `limit` allows to operate, it will also show an indicator `has_more=True`.

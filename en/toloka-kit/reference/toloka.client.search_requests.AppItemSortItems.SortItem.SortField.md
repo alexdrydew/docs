@@ -8,4 +8,6 @@ An enumeration.
 | Name | Value | Description |
 | :------| :-----------| :----------| 
 `ID`|'id'|<p></p>
-`CREATED_AT`|'created_at'|<p></p>
+`CREATED`|'created'|<p></p>
+`FINISHED`|'finished'|<p></p>
+`STATUS`|'status'|<p></p>

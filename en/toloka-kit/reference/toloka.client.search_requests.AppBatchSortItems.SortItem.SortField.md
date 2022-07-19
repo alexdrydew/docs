@@ -9,4 +9,5 @@ An enumeration.
 | :------| :-----------| :----------| 
 `ID`|'id'|<p></p>
 `NAME`|'name'|<p></p>
-`CREATED_AT`|'created_at'|<p></p>
+`CREATED`|'created'|<p></p>
+`STATUS`|'status'|<p></p>

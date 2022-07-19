@@ -1,5 +1,5 @@
 # AutoQuality
-`toloka.autoquality.optimizer.AutoQuality` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/autoquality/optimizer.py#L200)
+`toloka.autoquality.optimizer.AutoQuality` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.1/src/autoquality/optimizer.py#L200)
 
 ```python
 AutoQuality(
@@ -16,7 +16,7 @@ AutoQuality(
     score_func: Callable = default_calc_scores,
     ranking_func: Callable = default_calc_ranks,
     create_autoquality_pool_func: Callable = _create_autoquality_pool_default,
-    run_id: str = 'AutoQuality Project 2022-06-10 16:05:10'
+    run_id: str = 'AutoQuality Project 2022-07-19 12:08:42'
 )
 ```
 

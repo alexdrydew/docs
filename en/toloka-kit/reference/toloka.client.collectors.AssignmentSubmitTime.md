@@ -1,5 +1,5 @@
 # AssignmentSubmitTime
-`toloka.client.collectors.AssignmentSubmitTime` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/collectors.py#L192)
+`toloka.client.collectors.AssignmentSubmitTime` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.1/src/client/collectors.py#L192)
 
 ```python
 AssignmentSubmitTime(
@@ -11,33 +11,33 @@ AssignmentSubmitTime(
 )
 ```
 
-Filtering cheating performers who respond too quickly
+Filtering cheating Tolokers who respond too quickly
 
 
 Helpful when you need to:
-- Use this Restrict the pool access for performers who respond too quickly.
+- Use this Restrict the pool access for Tolokers who respond too quickly.
 - Provide protection from robots.
 
 Used with conditions:
-* TotalSubmittedCount - The number of assignments a specific performer completed.
-* FastSubmittedCount - The number of assignments a specific performer completed too fast.
+* TotalSubmittedCount - The number of assignments a specific Toloker completed.
+* FastSubmittedCount - The number of assignments a specific Toloker completed too fast.
 
 Used with actions:
 * RestrictionV2 - Block access to projects or pools.
-* ApproveAllAssignments - Approve all replies from the performer.
-* RejectAllAssignments - Reject all replies from the performer.
-* SetSkill - Set perfmer skill value.
+* ApproveAllAssignments - Approve all replies from the Toloker.
+* RejectAllAssignments - Reject all replies from the Toloker.
+* SetSkill - Set Toloker's skill value.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
 `fast_submit_threshold_seconds`|**Optional\[int\]**|<p>The task suite completion time (in seconds). Everything that is completed faster is considered a fast response.</p>
-`history_size`|**Optional\[int\]**|<p>The number of the recent task suites completed by the performer.</p>
+`history_size`|**Optional\[int\]**|<p>The number of the recent task suites completed by the Toloker.</p>
 
 **Examples:**
 
-How to reject all assignments if performer sends answers too fast.
+How to reject all assignments if Toloker sends answers too fast.
 
 ```python
 new_pool = toloka.pool.Pool(....)

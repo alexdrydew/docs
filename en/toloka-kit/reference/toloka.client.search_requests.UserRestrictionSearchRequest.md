@@ -1,5 +1,5 @@
 # UserRestrictionSearchRequest
-`toloka.client.search_requests.UserRestrictionSearchRequest` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/search_requests.py#L741)
+`toloka.client.search_requests.UserRestrictionSearchRequest` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.1/src/client/search_requests.py#L740)
 
 ```python
 UserRestrictionSearchRequest(
@@ -19,14 +19,14 @@ UserRestrictionSearchRequest(
 )
 ```
 
-Parameters for searching user restriction
+Parameters for searching Toloker restriction
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
 `scope`|**Optional\[[UserRestriction.Scope](toloka.client.user_restriction.UserRestriction.Scope.md)\]**|<p>The scope of the ban<ul><li>ALL_PROJECTS</li><li>PROJECT</li><li>POOL</li></ul></p>
-`user_id`|**Optional\[str\]**|<p>Performer ID.</p>
+`user_id`|**Optional\[str\]**|<p>Toloker&#x27;s ID.</p>
 `project_id`|**Optional\[str\]**|<p>The ID of the project that is blocked.</p>
 `pool_id`|**Optional\[str\]**|<p>The ID of the pool that is blocked.</p>
 `id_lt`|**Optional\[str\]**|<p>Bans with an ID less than the specified value.</p>

@@ -1,5 +1,5 @@
 # SkillId
-`toloka.client.conditions.SkillId` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/conditions.py#L255)
+`toloka.client.conditions.SkillId` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.1/src/client/conditions.py#L255)
 
 ```python
 SkillId(
@@ -9,5 +9,5 @@ SkillId(
 )
 ```
 
-The performer no longer meets the specific skill filter
+The Toloker no longer meets the specific skill filter
 

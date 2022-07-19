@@ -8,4 +8,3 @@ An enumeration.
 | Name | Value | Description |
 | :------| :-----------| :----------| 
 `ID`|'id'|<p></p>
-`NAME`|'name'|<p></p>

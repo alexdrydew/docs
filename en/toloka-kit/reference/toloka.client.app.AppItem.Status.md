@@ -1,5 +1,5 @@
 # Status
-`toloka.client.app.AppItem.Status` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/app/__init__.py#L127)
+`toloka.client.app.AppItem.Status` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.1/src/client/app/__init__.py#L148)
 
 An enumeration.
 
@@ -14,3 +14,4 @@ An enumeration.
 `CANCELLED`|'CANCELLED'|<p></p>
 `ARCHIVE`|'ARCHIVE'|<p></p>
 `NO_MONEY`|'NO_MONEY'|<p></p>
+`STOPPED`|'STOPPED'|<p></p>

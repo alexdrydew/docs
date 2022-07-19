@@ -1,5 +1,5 @@
 # BansInPool
-`toloka.metrics.pool_metrics.BansInPool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/metrics/pool_metrics.py#L426)
+`toloka.metrics.pool_metrics.BansInPool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.1/src/metrics/pool_metrics.py#L426)
 
 ```python
 BansInPool(
@@ -15,10 +15,10 @@ BansInPool(
 )
 ```
 
-Tracking the new user restrictions in pool
+Tracking Toloker restrictions in a pool.
 
 
-Be careful: if you set in quality controls to ban performers 'on project', bans 'on pool' will never happen.
+Be careful: if you set in quality controls to ban Tolokers 'on project', bans 'on pool' will never happen.
 
 ## Parameters Description
 
@@ -26,8 +26,8 @@ Be careful: if you set in quality controls to ban performers 'on project', bans 
 | :----------| :----| :-----------|
 `pool_id`|**str**|<p>From which pool track metrics.</p>
 `count_name`|**Optional\[str\]**|<p>Metric name for a count of bans.</p>
-`filter_by_comment`|**Optional\[Dict\[str, str\]\]**|<p>Allow to split user restriction into several lines based on comment. Dictionary where, key - comment string, and value - name for line in which will be aggregated bans with this comments.</p>
-`join_events`|**bool**|<p>Count all events in one point.  Default False.</p>
+`filter_by_comment`|**Optional\[Dict\[str, str\]\]**|<p>Allow to split Toloker restriction into several lines based on comment. Dictionary where, key - comment string, and value - name for line in which will be aggregated bans with this comments.</p>
+`join_events`|**bool**|<p>Count all events in one point. Default False.</p>
 
 **Examples:**
 

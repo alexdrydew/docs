@@ -1,5 +1,5 @@
 # Skill
-`toloka.client.filter.Skill` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/filter.py#L208)
+`toloka.client.filter.Skill` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.1/src/client/filter.py#L208)
 
 ```python
 Skill(
@@ -10,10 +10,10 @@ Skill(
 )
 ```
 
-Use to select users by skill value.
+Use to select Tolokers by skill value.
 
 
-To select users without a skill set the parameter value operator=CompareOperator.EQ and exclude the parameter value.
+To select Tolokers without a skill set the parameter value operator=CompareOperator.EQ and exclude the parameter value.
 
 ## Parameters Description
 

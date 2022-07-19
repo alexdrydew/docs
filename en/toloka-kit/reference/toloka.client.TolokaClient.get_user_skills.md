@@ -1,18 +1,18 @@
 # get_user_skills
 `toloka.client.TolokaClient.get_user_skills`
 
-Finds all user skills that match certain rules and returns them in an iterable object
+Finds all Toloker's skills that match certain rules and returns them in an iterable object
 
 
-UserSkill describe the skill value for a specific performer.
-Unlike find_user_skills, returns generator. Does not sort user skills.
+`UserSkill` describes the skill value for a specific Toloker.
+Unlike find_user_skills, returns generator. Does not sort Toloker's skills.
 While iterating over the result, several requests to the Toloka server is possible.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`user_id`|**Optional\[str\]**|<p>Performer ID.</p>
+`user_id`|**Optional\[str\]**|<p>Toloker&#x27;s ID.</p>
 `skill_id`|**Optional\[str\]**|<p>Skill ID.</p>
 `id_lt`|**Optional\[str\]**|<p>Skills with an ID less than the specified value.</p>
 `id_lte`|**Optional\[str\]**|<p>Skills with an ID less than or equal to the specified value.</p>

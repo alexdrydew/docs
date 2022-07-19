@@ -1,5 +1,5 @@
 # NewUserSkills
-`toloka.metrics.metrics.NewUserSkills` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/metrics/metrics.py#L259)
+`toloka.metrics.metrics.NewUserSkills` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.1/src/metrics/metrics.py#L259)
 
 ```python
 NewUserSkills(
@@ -15,7 +15,7 @@ NewUserSkills(
 )
 ```
 
-Tracking the new user skill values
+Tracking Tolokers' skills.
 
 ## Parameters Description
 

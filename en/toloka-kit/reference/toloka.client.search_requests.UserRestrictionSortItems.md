@@ -5,7 +5,7 @@
 UserRestrictionSortItems(self, items=None)
 ```
 
-Parameters for sorting user restriction search results
+Parameters for sorting Toloker restriction search results
 
 
 You can specify multiple parameters.
@@ -15,7 +15,7 @@ To change the sorting direction (sort in descending order), add a hyphen before 
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`items`|**Optional\[List\[[SortItem](toloka.client.search_requests.UserRestrictionSortItems.SortItem.md)\]\]**|<p>Fields by which to sort. Possible values:<ul><li>id - User restriction ID in ascending order.</li><li>created - Creation date in UTC format yyyy-MM-DD (ascending).</li></ul></p>
+`items`|**Optional\[List\[[SortItem](toloka.client.search_requests.UserRestrictionSortItems.SortItem.md)\]\]**|<p>Fields by which to sort. Possible values:<ul><li>id - Restriction IDs.</li><li>created - Creation date in UTC format yyyy-MM-DD.</li></ul></p>
 
 **Examples:**
 

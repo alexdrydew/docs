@@ -1,25 +1,26 @@
 # get_assignments
 `toloka.client.TolokaClient.get_assignments`
 
-Finds all assignments that match certain rules and returns them in an iterable object
+Finds all assignments that match certain criteria.
 
 
-Unlike find_assignments, returns generator. Does not sort assignments.
-While iterating over the result, several requests to the Toloka server is possible.
+`get_assignments` returns a generator. You can iterate over all found assignments using the generator. Several requests to the Toloka server are possible while iterating.
+
+Note that assignments can not be sorted. If you need to sort assignments use [find_assignments](toloka.client.TolokaClient.find_assignments.md).
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`status`|**Union\[str, [Assignment.Status](toloka.client.assignment.Assignment.Status.md), List\[Union\[str, [Assignment.Status](toloka.client.assignment.Assignment.Status.md)\]\], None\]**|<p>Status of an assigned task suite (Detailed status description in Assignment.Status):<ul><li>ACTIVE</li><li>SUBMITTED</li><li>ACCEPTED</li><li>REJECTED</li><li>SKIPPED</li><li>EXPIRED</li></ul></p>
-`task_id`|**Optional\[str\]**|<p>The task ID in suites generated automatically using &quot;smart mixing&quot;. You will get responses for task suites that contain the specified task.</p>
-`task_suite_id`|**Optional\[str\]**|<p>ID of a task suite.</p>
-`pool_id`|**Optional\[str\]**|<p>Pool ID.</p>
-`user_id`|**Optional\[str\]**|<p>Performer ID.</p>
-`id_lt`|**Optional\[str\]**|<p>Task suites with an assignment ID less than the specified value.</p>
-`id_lte`|**Optional\[str\]**|<p>Task suites with an assignment ID less than or equal to the specified value.</p>
-`id_gt`|**Optional\[str\]**|<p>Task suites with an assignment ID greater than the specified value.</p>
-`id_gte`|**Optional\[str\]**|<p>Task suites with an assignment ID greater than or equal to the specified value.</p>
+`status`|**Union\[str, [Assignment.Status](toloka.client.assignment.Assignment.Status.md), List\[Union\[str, [Assignment.Status](toloka.client.assignment.Assignment.Status.md)\]\], None\]**|<p>The status of an assigned task suite:<ul><li>`ACTIVE` — Assigned but not completed.</li><li>`SUBMITTED` — Completed but not checked.</li><li>`ACCEPTED` — Accepted by the requester.</li><li>`REJECTED` — Rejected by the requester.</li><li>`SKIPPED` — Skipped by the Toloker.</li><li>`EXPIRED` — Time for completing tasks has expired.</li></ul></p>
+`task_id`|**Optional\[str\]**|<p>The ID of a task. The task suite containing that task, matches this search criteria.</p>
+`task_suite_id`|**Optional\[str\]**|<p>The ID of a task suite.</p>
+`pool_id`|**Optional\[str\]**|<p>Task suites in the pool with the specified ID.</p>
+`user_id`|**Optional\[str\]**|<p>Task suites assigned to the Toloker with the specified ID.</p>
+`id_lt`|**Optional\[str\]**|<p>Task suites with assignment IDs less than the specified value.</p>
+`id_lte`|**Optional\[str\]**|<p>Task suites with assignment IDs less than or equal to the specified value.</p>
+`id_gt`|**Optional\[str\]**|<p>Task suites with assignment IDs greater than the specified value.</p>
+`id_gte`|**Optional\[str\]**|<p>Task suites with assignment IDs greater than or equal to the specified value.</p>
 `created_lt`|**Optional\[datetime\]**|<p>Task suites assigned before the specified date.</p>
 `created_lte`|**Optional\[datetime\]**|<p>Task suites assigned before or on the specified date.</p>
 `created_gt`|**Optional\[datetime\]**|<p>Task suites assigned after the specified date.</p>
@@ -47,7 +48,7 @@ While iterating over the result, several requests to the Toloka server is possib
 
 * **Yields:**
 
-  The next object corresponding to the request parameters.
+  Next matching assignment.
 
 * **Yield type:**
 
@@ -55,7 +56,7 @@ While iterating over the result, several requests to the Toloka server is possib
 
 **Examples:**
 
-Let’s make a list of `assignment_id` of all `SUBMITTED` assignments in the specified pool.
+The following example creates the list with IDs of `SUBMITTED` assignments in the specified pool.
 
 ```python
 from toloka.client import Assignment

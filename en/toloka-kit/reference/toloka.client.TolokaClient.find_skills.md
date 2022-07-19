@@ -6,7 +6,7 @@ Finds all skills that match certain rules
 
 As a result, it returns an object that contains the first part of the found skills and whether there
 are any more results.
-It is better to use the "get_skills" method, they allow to iterate trought all results
+It is better to use the [get_skills](toloka.client.TolokaClient.get_skills.md) method, it allows you to iterate through all results
 and not just the first output.
 
 ## Parameters Description
@@ -42,4 +42,4 @@ Find ten most recently created skills.
 toloka_client.find_skills(sort=['-created', '-id'], limit=10)
 ```
 
-If method finds more objects than custom or system `limit` allows to operate, it will also show an indicator `has_more=True`.
+If the method finds more objects than custom or system `limit` allows to operate, it will also show an indicator `has_more=True`.

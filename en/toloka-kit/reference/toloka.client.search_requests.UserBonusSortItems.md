@@ -5,7 +5,7 @@
 UserBonusSortItems(self, items=None)
 ```
 
-Parameters for sorting user bonus search results
+Parameters for sorting `UserBonus` search results
 
 
 You can specify multiple parameters.

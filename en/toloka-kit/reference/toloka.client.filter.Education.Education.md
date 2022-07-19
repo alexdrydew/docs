@@ -1,7 +1,7 @@
 # Education
-`toloka.client.filter.Education.Education` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/filter.py#L275)
+`toloka.client.filter.Education.Education` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.1/src/client/filter.py#L275)
 
-User education.
+Toloker's education.
 
 ## Attributes Description
 

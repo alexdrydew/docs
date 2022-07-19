@@ -8,7 +8,7 @@ Changes the priority of the pool issue
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
 `pool_id`|**str**|<p>ID of the pool that will be patched.</p>
-`priority`|**Optional\[int\]**|<p>The priority of the pool in relation to other pools in the project with the same task price and set of filters. Users are assigned tasks with a higher priority first. Possible values: from -100 to 100.</p>
+`priority`|**Optional\[int\]**|<p>The priority of the pool in relation to other pools in the project with the same task price and set of filters. Tolokers are assigned tasks with a higher priority first. Possible values: from -100 to 100.</p>
 
 * **Returns:**
 

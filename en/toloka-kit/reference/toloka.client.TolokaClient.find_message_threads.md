@@ -6,7 +6,7 @@ Finds all message threads that match certain rules
 
 As a result, it returns an object that contains the first part of the found threads and whether there
 are any more results.
-It is better to use the "get_message_threads" method, they allow to iterate trought all results
+It is better to use the [get_message_threads](toloka.client.TolokaClient.get_message_threads.md) method, it allows you to iterate through all results
 and not just the first output.
 
 ## Parameters Description

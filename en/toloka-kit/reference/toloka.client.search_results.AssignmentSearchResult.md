@@ -10,14 +10,14 @@ AssignmentSearchResult(
 )
 ```
 
-The list of found assignments and whether there is something else on the original request
+The list of found assignments.
 
 
-It's better to use TolokaClient.get_assignments(), which already implements the correct handling of the search result.
+The number of assignments in the list is limited by the [find_assignments](toloka.client.TolokaClient.find_assignments.md) method.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`items`|**Optional\[List\[[Assignment](toloka.client.assignment.Assignment.md)\]\]**|<p>List of found assignments</p>
-`has_more`|**Optional\[bool\]**|<p>Whether the list is complete:<ul><li>True - Not all elements are included in the output due to restrictions in the limit parameter.</li><li>False - The output lists all the items.</li></ul></p>
+`items`|**Optional\[List\[[Assignment](toloka.client.assignment.Assignment.md)\]\]**|<p>The list of found assignments.</p>
+`has_more`|**Optional\[bool\]**|<p>More items flag:<ul><li>`True` — Not all assignments matching search criteria are returned in the `items` due to the limit.</li><li>`False` — All matching assignments are in the `items`.</li></ul></p>
